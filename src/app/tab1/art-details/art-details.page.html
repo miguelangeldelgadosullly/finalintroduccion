@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+
+<ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+
+    </ion-buttons>
+    <ion-title>{{art.tittle}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+<ion-row>
+  <ion-col>
+    <ion-img [src]="art.ImageURL"></ion-img>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+    <h1 class="ion-text-center">{{art.tittle}}</h1>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+    <h1 class="ion-text-center">{{art.precio}}</h1>
+
+
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+    <ion-button color="danger">COMPRAR </ion-button>
+
+
+  </ion-col>
+</ion-row>
+
+</ion-grid>
+</ion-content>

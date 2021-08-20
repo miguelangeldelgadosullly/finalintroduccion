@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+      
+          </ion-buttons>
+    <ion-title>
+      Dayanna Details App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+
+
+<ion-content [fullscreen]="true">
+<!-- Item Inset Lines -->
+<ion-item  *ngFor="let art of arts" [routerLink]="['/tabs',art.id]">
+<ion-avatar>
+<ion-img
+[src]="art.ImageURL">
+
+</ion-img>
+</ion-avatar>
+<ion-label>
+{{art.tittle}}
+  
+</ion-label>
+
+<ion-label>
+  {{art.precio}}
+    
+  </ion-label>
+  <ion-label>
+ 
+    <ion-button fill="outline" slot="end">Editar</ion-button>
+    </ion-label>
+
+</ion-item>
+
+
+
+ 
+</ion-content>

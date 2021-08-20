@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+      
+          </ion-buttons>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<form>
+  <ion-item lines="full">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text"  placeholder="Email" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}"></ion-input>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" placeholder="Password" [(ngModel)]="user.pw" [ngModelOptions]="{standalone: true}"></ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" color="danger" expand="block" (click)="SignIn()">Sign In</ion-button>
+
+    </ion-col>
+  </ion-row>
+</form>
+
+
+
+<ion-content>
+
+</ion-content>
